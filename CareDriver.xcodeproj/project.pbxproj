@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		8A2B57052E2BE56500073948 /* CareDriverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57042E2BE56500073948 /* CareDriverApp.swift */; };
-		8A2B57072E2BE56500073948 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57062E2BE56500073948 /* ContentView.swift */; };
+		8A2B57072E2BE56500073948 /* RidesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57062E2BE56500073948 /* RidesListView.swift */; };
 		8A2B57092E2BE56900073948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B57082E2BE56900073948 /* Assets.xcassets */; };
 		8A2B570C2E2BE56900073948 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B570B2E2BE56900073948 /* Preview Assets.xcassets */; };
 		8A2B57162E2BE56A00073948 /* CareDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57152E2BE56A00073948 /* CareDriverTests.swift */; };
-		8A2B57202E2BE56A00073948 /* CareDriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B571F2E2BE56A00073948 /* CareDriverUITests.swift */; };
 		8A2B57222E2BE56A00073948 /* CareDriverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57212E2BE56A00073948 /* CareDriverUITestsLaunchTests.swift */; };
+		8A2B57312E2BE78200073948 /* CareDriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B571F2E2BE56A00073948 /* CareDriverUITests.swift */; };
+		8A2B57342E2BE8C900073948 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57332E2BE8C900073948 /* Ride.swift */; };
+		8A2B57372E2BEDAD00073948 /* rides.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B57362E2BEDAD00073948 /* rides.json */; };
+		8A2B57392E2C274800073948 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57382E2C274800073948 /* APIService.swift */; };
+		8A2B573B2E2C2AFA00073948 /* RidesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B573A2E2C2AFA00073948 /* RidesListViewModel.swift */; };
+		8A4E321E2E2C3B2600148121 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E321D2E2C3B2600148121 /* MockAPIService.swift */; };
+		8A4E321F2E2C3B4A00148121 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57382E2C274800073948 /* APIService.swift */; };
+		8A4E32202E2C3B5800148121 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B57332E2BE8C900073948 /* Ride.swift */; };
+		8A4E32212E2C3CB200148121 /* RidesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B573A2E2C2AFA00073948 /* RidesListViewModel.swift */; };
+		8A4E32242E2D963700148121 /* RoutePointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E32232E2D963700148121 /* RoutePointView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		8A2B57012E2BE56500073948 /* CareDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2B57042E2BE56500073948 /* CareDriverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareDriverApp.swift; sourceTree = "<group>"; };
-		8A2B57062E2BE56500073948 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A2B57062E2BE56500073948 /* RidesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesListView.swift; sourceTree = "<group>"; };
 		8A2B57082E2BE56900073948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2B570B2E2BE56900073948 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A2B57112E2BE56A00073948 /* CareDriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareDriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,12 @@
 		8A2B571B2E2BE56A00073948 /* CareDriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareDriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2B571F2E2BE56A00073948 /* CareDriverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareDriverUITests.swift; sourceTree = "<group>"; };
 		8A2B57212E2BE56A00073948 /* CareDriverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareDriverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A2B57332E2BE8C900073948 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		8A2B57362E2BEDAD00073948 /* rides.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rides.json; sourceTree = "<group>"; };
+		8A2B57382E2C274800073948 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8A2B573A2E2C2AFA00073948 /* RidesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesListViewModel.swift; sourceTree = "<group>"; };
+		8A4E321D2E2C3B2600148121 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		8A4E32232E2D963700148121 /* RoutePointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePointView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +109,11 @@
 		8A2B57032E2BE56500073948 /* CareDriver */ = {
 			isa = PBXGroup;
 			children = (
+				8A2B57352E2BED6000073948 /* Data */,
+				8A2B57322E2BE78E00073948 /* Views */,
+				8A2B572F2E2BE77500073948 /* Models */,
+				8A2B572E2E2BE75A00073948 /* ViewModels */,
 				8A2B57042E2BE56500073948 /* CareDriverApp.swift */,
-				8A2B57062E2BE56500073948 /* ContentView.swift */,
 				8A2B57082E2BE56900073948 /* Assets.xcassets */,
 				8A2B570A2E2BE56900073948 /* Preview Content */,
 			);
@@ -113,6 +131,7 @@
 		8A2B57142E2BE56A00073948 /* CareDriverTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A4E321C2E2C3AF000148121 /* Mocks */,
 				8A2B57152E2BE56A00073948 /* CareDriverTests.swift */,
 			);
 			path = CareDriverTests;
@@ -125,6 +144,56 @@
 				8A2B57212E2BE56A00073948 /* CareDriverUITestsLaunchTests.swift */,
 			);
 			path = CareDriverUITests;
+			sourceTree = "<group>";
+		};
+		8A2B572E2E2BE75A00073948 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B573A2E2C2AFA00073948 /* RidesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A2B572F2E2BE77500073948 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B57332E2BE8C900073948 /* Ride.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A2B57322E2BE78E00073948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E32222E2D95C300148121 /* Components */,
+				8A2B57062E2BE56500073948 /* RidesListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A2B57352E2BED6000073948 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B57362E2BEDAD00073948 /* rides.json */,
+				8A2B57382E2C274800073948 /* APIService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8A4E321C2E2C3AF000148121 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E321D2E2C3B2600148121 /* MockAPIService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8A4E32222E2D95C300148121 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E32232E2D963700148121 /* RoutePointView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +302,7 @@
 			files = (
 				8A2B570C2E2BE56900073948 /* Preview Assets.xcassets in Resources */,
 				8A2B57092E2BE56900073948 /* Assets.xcassets in Resources */,
+				8A2B57372E2BEDAD00073948 /* rides.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2B57072E2BE56500073948 /* ContentView.swift in Sources */,
+				8A2B57072E2BE56500073948 /* RidesListView.swift in Sources */,
 				8A2B57052E2BE56500073948 /* CareDriverApp.swift in Sources */,
+				8A2B57392E2C274800073948 /* APIService.swift in Sources */,
+				8A2B573B2E2C2AFA00073948 /* RidesListViewModel.swift in Sources */,
+				8A2B57342E2BE8C900073948 /* Ride.swift in Sources */,
+				8A4E32242E2D963700148121 /* RoutePointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4E321E2E2C3B2600148121 /* MockAPIService.swift in Sources */,
+				8A4E32202E2C3B5800148121 /* Ride.swift in Sources */,
+				8A4E321F2E2C3B4A00148121 /* APIService.swift in Sources */,
+				8A4E32212E2C3CB200148121 /* RidesListViewModel.swift in Sources */,
 				8A2B57162E2BE56A00073948 /* CareDriverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2B57202E2BE56A00073948 /* CareDriverUITests.swift in Sources */,
+				8A2B57312E2BE78200073948 /* CareDriverUITests.swift in Sources */,
 				8A2B57222E2BE56A00073948 /* CareDriverUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

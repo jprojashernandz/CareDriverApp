@@ -1,0 +1,120 @@
+{
+  "rides": [
+    {
+      "id": 101,
+      "start_address": "123 Main St, Los Angeles, CA 90012",
+      "destination_address": "456 N Camden Dr, Beverly Hills, CA 90210",
+      "ride_distance_miles": 8.5,
+      "ride_duration_minutes": 25,
+      "ride_earnings": 22.5,
+      "commute_distance_miles": 5.2,
+      "commute_duration_minutes": 15,
+      "score": 33.75
+    },
+    {
+      "id": 102,
+      "start_address": "789 Pine St, Santa Monica, CA 90405",
+      "destination_address": "101 N Maple Dr, Beverly Hills, CA 90210",
+      "ride_distance_miles": 6.1,
+      "ride_duration_minutes": 18,
+      "ride_earnings": 15.74,
+      "commute_distance_miles": 12.1,
+      "commute_duration_minutes": 8,
+      "score": 22.27
+    },
+    {
+      "id": 103,
+      "start_address": "6255 2nd St, Long Beach, CA 90803",
+      "destination_address": "456 Oak Ave, Beverly Hills, CA",
+      "ride_distance_miles": 25,
+      "ride_duration_minutes": 25,
+      "ride_earnings": 51.46,
+      "commute_distance_miles": 25,
+      "commute_duration_minutes": 54,
+      "score": 60.75
+    },
+    {
+      "id": 104,
+      "start_address": "1478 Lemon Ave, Long Beach, CA 90813",
+      "destination_address": "18400 Avalon Blvd, Carson, CA 90746",
+      "ride_distance_miles": 12.1,
+      "ride_duration_minutes": 18,
+      "ride_earnings": 31.63,
+      "commute_distance_miles": 12.1,
+      "commute_duration_minutes": 28,
+      "score": 40.27
+    },
+    {
+      "id": 105,
+      "start_address": "420 S Catalina Ave, Redondo Beach, CA 90277",
+      "destination_address": "1407 Abbot Kinney Blvd, Venice, CA 90291",
+      "ride_distance_miles": 11.2,
+      "ride_duration_minutes": 25,
+      "ride_earnings": 48.75,
+      "commute_distance_miles": 11.55,
+      "commute_duration_minutes": 38,
+      "score": 43.75
+    },
+    {
+      "id": 106,
+      "start_address": "3005 Old Ranch Pkwy, Seal Beach, CA 90740",
+      "destination_address": "4828 2nd St, Long Beach, CA 90803",
+      "ride_distance_miles": 6.1,
+      "ride_duration_minutes": 13,
+      "ride_earnings": 24.77,
+      "commute_distance_miles": 7.1,
+      "commute_duration_minutes": 14,
+      "score": 30.27
+    },
+    {
+      "id": 107,
+      "start_address": "3333 Bristol St, Costa Mesa, CA 92626",
+      "destination_address": "2110 Newport Blvd, Newport Beach, CA 92663",
+      "ride_distance_miles": 11.2,
+      "ride_duration_minutes": 25,
+      "ride_earnings": 48.75,
+      "commute_distance_miles": 11.55,
+      "commute_duration_minutes": 38,
+      "score": 33.75
+    },
+    {
+      "id": 108,
+      "start_address": "321 W Katella Ave, Anaheim, CA 92802",
+      "destination_address": "2000 E Gene Autry Way, Anaheim, CA 92806",
+      "ride_distance_miles": 8.1,
+      "ride_duration_minutes": 19,
+      "ride_earnings": 24.77,
+      "commute_distance_miles": 8.4,
+      "commute_duration_minutes": 21,
+      "score": 47.27
+    },
+    {
+      "id": 109,
+      "start_address": "13924 Ventura Blvd, Sherman Oaks, CA 91423",
+      "destination_address": "22456 Ventura Blvd, Woodland Hills, CA 91364",
+      "ride_distance_miles": 6.2,
+      "ride_duration_minutes": 14,
+      "ride_earnings": 48.75,
+      "commute_distance_miles": 7,
+      "commute_duration_minutes": 17,
+      "score": 29.75
+    },
+    {
+      "id": 110,
+      "start_address": "1000 Vin Scully Ave, Los Angeles, CA 90012",
+      "destination_address": "Lucky Strike Bowling - Los Angeles, 800 W Olympic Blvd, Los Angeles, CA 90015",
+      "ride_distance_miles": 9.1,
+      "ride_duration_minutes": 22,
+      "ride_earnings": 39.71,
+      "commute_distance_miles": 9.5,
+      "commute_duration_minutes": 24,
+      "score": 39.27
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "page_size": 10,
+    "next_page": 2,
+    "total_pages": 5
+  }
+}

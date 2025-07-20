@@ -8,29 +8,45 @@
 import XCTest
 @testable import CareDriver
 
+@MainActor
 final class CareDriverTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func test_loadRides_successful() async {
+        let mockAPIService = MockAPIService()
+        let viewModel = RidesListViewModel(service: mockAPIService)
+        
+        await viewModel.loadRides()
+        
+        XCTAssertEqual(viewModel.rides, mockAPIService.mockRides.sorted { $0.score > $1.score })
+        XCTAssertFalse(viewModel.isLoading)
+        XCTAssertNil(viewModel.errorMessage)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_loadRides_failure() async {
+        let mockAPIService = MockAPIService()
+        mockAPIService.shouldThrowError = true
+        let viewModel = RidesListViewModel(service: mockAPIService)
+        
+        await viewModel.loadRides()
+        
+        XCTAssertEqual(viewModel.rides, [])
+        XCTAssertFalse(viewModel.isLoading)
+        XCTAssertEqual(viewModel.errorMessage, "Fetch failed")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_sortRidesByScore_descending() {
+        let mockAPIService = MockAPIService()
+        let viewModel = RidesListViewModel(service: mockAPIService)
+        let rides = mockAPIService.mockRides
+        let sorted = viewModel.sortRidesByScore(rides: rides, descending: true)
+        XCTAssertEqual(sorted, [rides[2], rides[0], rides[1]])
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_sortRidesByScore_ascending() {
+        let mockAPIService = MockAPIService()
+        let viewModel = RidesListViewModel(service: mockAPIService)
+        let rides = mockAPIService.mockRides
+        let sorted = viewModel.sortRidesByScore(rides: rides, descending: false)
+        XCTAssertEqual(sorted, [rides[1], rides[0], rides[2]])
     }
-
 }
